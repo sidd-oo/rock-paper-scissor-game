@@ -9,14 +9,14 @@ let computerPlay = ()=>{
 };
 
 let playerPlay = ()=>{
-    let select = window.prompt("Choose from Rock, Paper and Scissor");
+    let select = window.prompt("Choose from Rock, Paper and Scissor").toLowerCase();
     return select;
-}
+};
 
 let playRound = (computerSelection, playerSelection)=>{
-    const computerSelect = computerSelection();
-    const playerSelect = playerSelection();
-    if(computerSelect == playSelection){
+    const computerSelect = computerSelection;
+    const playerSelect = playerSelection;
+    if(computerSelect == playerSelect){
         computerScore++;
         playerScore++;
         console.log(`You both won as you both choose ${computerSelect}`);
@@ -38,22 +38,24 @@ let playRound = (computerSelection, playerSelection)=>{
     }else if(computerSelect == "scissor" && playerSelect == "paper"){
         computerScore++;
         console.log(`You got hit badly with ${computerSelect}`);
+    }else{
+        console.log(`The input is not correct`);
     }
-}
+};
 
 function winner(){
     if(computerScore == playerScore){
         console.log("Draw");
     }else if (computerScore > playerScore){
-        console.log(`You lost this game by ${playerScore} - ${computererScore}`);
+        console.log(`You lost this game by ${playerScore} - ${computerScore}`);
     }else {
-        console.log(`You won this game by ${playerScore} - ${computererScore}`);
+        console.log(`You won this game by ${playerScore} - ${computerScore}`);
     }
 }
 
 function game(){
     for(let i = 0; i < 5; i++){
-        playRound(computerPlay, playerPlay);
+        playRound(computerPlay(), playerPlay());
     }
     winner();
 }
