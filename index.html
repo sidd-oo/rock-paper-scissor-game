@@ -5,9 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
     <link type = "text/css" rel = "stylesheet" href = "style/style.css">
-    
 </head>
-<body>
+<body> 
+    <div class = box>
+        <header>
+            <h1 >ROCK PAPER SCISSOR</h1>
+            <h2 >The first player to get 5 points wins the game</h2>
+        </header>
+        <main>
+        <div id = "scoreboard">
+            <span>PLAYER'S SCORE: 0</span>
+            <span>|</span>
+            <span>COMPUTER'S SCORE: 0</span>
+        </div>
+
+        <div id = button-container>
+            <form>
+                <button type="button" id = "rock-btn"> ROCK</button>
+                <button type="button" id = "paper-btn"> PAPER</button>
+                <button type="button" id = "scissor-btn"> SCISSOR</button>
+            </form>
+
+            <form>
+                <button type="button" id = "play-again-btn">PLAY AGAIN</button>
+            </form>
+        </div>
+
+        <div id = "information">
+            <span id="player-choice">Your choice:</span>
+            <span> | </span>
+            <span id="computer-choice">Computer's choice:</span>
+            <p id="results">Click one of the buttons above to begin the game!</p>
+        </div>    
+        </main>
+    </div>  
+    
+    <footer>
+        <a href = "https://github.com/sidd-oo/rock-paper-scissor-game"> Siddharth Sahoo </a>
+    </footer>
     <script src= "script.js"> </script>
 </body>
 </html>
+

@@ -1,5 +1,59 @@
-*{
-    background-color: blueviolet;
+
+body{
+    background-image: url("../images/off-grey-wall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+.box{
+    height: 500px;
+    width: 700px;
+    margin-top: 5%;
+    margin-left: 23%;
+    align-self: center;
+    border: 5px black solid;
+    border-radius: 2%;
+    text-align: center;
+    font-size: 20px;
+}
 
+button{
+  margin: 20px 12px 15px 12px;
+  padding: 6px 12px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: #00bbff;
+  color: white;
+  border: none;
+  box-shadow: 0 5px #999;
+}
+
+button:hover {
+    background-color: #007dab;
+    transform: scale(1.1);
+  }
+
+button:active{
+    background-color: #007dab;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #e4e4e4;
+  }
+
+a{
+    color: black;
+    text-decoration:none;
+}
+
+a:hover{
+    transform:scale3d(1.1);
+}
