@@ -70,4 +70,6 @@ a:hover{
 
 #play-again-btn{
   display: none;
+  margin: 20px auto 15px auto;
 }
+

@@ -35,7 +35,10 @@ scissorButton.addEventListener('click', (e)=>{
     evaluateScore();
 });
 
-
+let playAgainEvent = document.getElementById('play-again-btn');
+playAgainEvent.addEventListener('click',()=>{
+        window.location.reload();
+});
 
 function getComputerChoice(){
     let choices = ["rock", "paper", "scissor"];
