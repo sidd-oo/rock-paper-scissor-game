@@ -93,7 +93,7 @@ function isMatchOver(){
         setTimeout(() => {
             rockPaperScissorElement.style.display = "none";
             playAgainElement.style.display = "block";
-        }, 700);
+        }, 200);
 
         if(computerScore == 5){
             querySelector('#result').innerHTML = "Sorry! You've lost the game.";
