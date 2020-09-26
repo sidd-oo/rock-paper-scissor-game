@@ -88,3 +88,7 @@ a:hover{
   margin: 20px auto 15px auto;
 }
 
+#result{
+  font-weight: bolder;
+}
+

@@ -87,18 +87,15 @@ function evaluateScore(){
 function isMatchOver(){
     let rockPaperScissorElement = document.getElementById('rock-paper-scissor-btn');
     let playAgainElement = document.getElementById('play-again-btn');
+    let resultEditHTML = document.querySelector('#result');
 
     if(computerScore > 4 || playerScore > 4){
-        
-        setTimeout(() => {
             rockPaperScissorElement.style.display = "none";
             playAgainElement.style.display = "block";
-        }, 3000);
-
-        if(computerScore == 5){
-            querySelector('#result').innerHTML = "Sorry! You've lost the game.";
-        }else{
-            querySelector('#result').innerHTML = "Congratulation! You've won the game."
+        if(computerScore === 5){
+            resultEditHTML.innerHTML= "Sorry! You've lost the game.";
+        }else if(playerScore === 5){
+            resultEditHTML.innerHTML = "Congratulation! You've won the game.";
         }
     }
 }
