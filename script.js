@@ -97,5 +97,11 @@ function isMatchOver(){
         }else if(playerScore === 5){
             resultEditHTML.innerHTML = "Congratulation! You've won the game.";
         }
+        if(computerScore == 5){
+            querySelector('#result').innerHTML = "Sorry! You've lost the game.";
+        }else{
+            querySelector('#result').innerHTML = "Congratulation! You've won the game.";
+        }
     }
+
 }
